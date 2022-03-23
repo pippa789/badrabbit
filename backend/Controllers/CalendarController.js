@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const moment = require('moment');
-const Event = require('../Models/Event')
+const Event = require('../Schema/Event')
 
 router.post('/create-event', async(req, res) => {
     const event = Event(req.body)
@@ -19,7 +19,7 @@ router.get('/get-events', async(req, res) => {
     res.send(events)
 
 })
-s
+
 
 
 module.exports = router
