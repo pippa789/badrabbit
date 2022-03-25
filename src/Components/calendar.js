@@ -32,9 +32,8 @@ export default function () {
     };
 
     async function handleDatesSet(data) {
-        const response = await axios.get("/api/calendar/get-events"+moment(data.start).toISOString()+"&end="+moment(data.end).toISOString());
+        const response = await axios.get("/api/calendar/get-events?start="+moment(data.start).toISOString()+"&end="+moment(data.end).toISOString());
         setEvents(response.data);
-
     }
 
     return (

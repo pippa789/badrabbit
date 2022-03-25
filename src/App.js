@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import Modal from 'react-modal';
-import FullCalendar from './components/calendar'
-import NavBar from './components/NavBar'
+import FullCalendar from './Components/calendar'
+import NavBar from './Components/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import head from './images/head.jpg'
 
